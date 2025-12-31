@@ -1,6 +1,6 @@
-# Contributing to RegainFlow - Procurement Analytics & Vendor Intelligence Platform
+# Contributing to Procurement Analytics & Vendor Intelligence Platform
 
-Welcome to the RegainFlow project! This guide will help you understand our architecture, design system, and contribution workflow as we scale this platform.
+Welcome to the Procurement Analytics project! This guide will help you understand our architecture, design system, and contribution workflow as we scale this platform.
 
 ## Table of Contents
 
@@ -20,14 +20,14 @@ Welcome to the RegainFlow project! This guide will help you understand our archi
 
 ## Project Overview
 
-**RegainFlow** is an AI-powered procurement analytics and vendor intelligence platform designed to help organizations manage vendors, analyze proposals, and gain actionable insights through intelligent automation.
+**Procurement Analytics** is an enterprise-grade system designed to help organizations manage vendors, analyze proposals, and gain actionable insights through intelligent automation.
 
 ### Core Features
 
 - **Dashboard Analytics**: Real-time procurement metrics and KPIs
 - **Vendor Management**: Comprehensive vendor tracking with risk scoring
-- **Proposal Analysis**: AI-powered cost analysis and line-item review (benchmarked against industry standards)
-- **AI Insights**: Gemini-powered intelligent recommendations
+- **Proposal Analysis**: Automated cost analysis and line-item review (benchmarked against industry standards)
+- **Automated Insights**: Intelligence-driven recommendations and risk assessments
 - **Glass Morphism UI**: Modern, premium design with neon accents
 
 ### Current State
@@ -45,7 +45,6 @@ The project is currently in a **single-file architecture** (`App.tsx`) and is be
 - **Vite 6.2.0** - Build tool and dev server
 - **Lucide React 0.554.0** - Icon library
 - **Recharts 3.5.0** - Data visualization
-- **Google Gemini AI 1.30.0** - AI-powered insights
 
 ### Development Tools
 
@@ -104,7 +103,7 @@ src/
 │   │   ├── types/
 │   │   └── utils/
 │   │
-│   └── insights/
+│   ├── insights/
 │       ├── api/
 │       ├── components/
 │       ├── hooks/
@@ -114,7 +113,6 @@ src/
 ├── hooks/                # Shared hooks
 │
 ├── lib/                  # Pre-configured libraries
-│   └── gemini/          # Gemini AI configuration
 │
 ├── services/            # API services and integrations
 │
@@ -198,7 +196,7 @@ import { VendorList } from '@/features/vendors/components/VendorList';
 
 ## Design System
 
-RegainFlow uses a **Glass Morphism + Neon Aesthetic** design system. All design tokens and patterns are documented in [`STYLES.md`](./STYLES.md).
+The platform uses a **Glass Morphism + Neon Aesthetic** design system. All design tokens and patterns are documented in [`STYLES.md`](./STYLES.md).
 
 ### Key Design Principles
 
@@ -273,7 +271,6 @@ import { LayoutDashboard, Users, FileText } from 'lucide-react';
 
 - **Node.js** (v18+ recommended)
 - **npm** or **yarn**
-- **Gemini API Key** (for AI features)
 
 ### Installation
 
@@ -290,21 +287,13 @@ cd procurement-analytics
 npm install
 ```
 
-3. **Set up environment variables**
-
-Create a `.env.local` file:
-
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-4. **Start the development server**
+3. **Start the development server**
 
 ```bash
 npm run dev
 ```
 
-5. **Open your browser**
+4. **Open your browser**
 
 Navigate to `http://localhost:5173`
 
@@ -798,50 +787,3 @@ Closes #123
 
 1. **Automated checks** - Linting, tests, build
 2. **Code review** - At least one approval required
-3. **Design review** - UI/UX compliance check
-4. **Merge** - Squash and merge to develop
-
----
-
-## Resources
-
-### Documentation
-
-- [STYLES.md](./STYLES.md) - Complete design system documentation
-- [README.md](./README.md) - Project setup and basic info
-- [Bulletproof React](https://github.com/alan2207/bulletproof-react) - Architecture inspiration
-
-### Design Resources
-
-- [Lucide Icons](https://lucide.dev/) - Icon library
-- [Recharts](https://recharts.org/) - Chart library
-- [Google Fonts - Exo 2](https://fonts.google.com/specimen/Exo+2) - Primary font
-
-### Learning Resources
-
-- [React Documentation](https://react.dev/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [Vite Guide](https://vitejs.dev/guide/)
-
----
-
-## Questions or Issues?
-
-If you have questions or run into issues:
-
-1. Check existing documentation
-2. Search existing issues
-3. Create a new issue with detailed information
-4. Reach out to the team
-
----
-
-## License
-
-[Add license information here]
-
----
-
-**Thank you for contributing to RegainFlow!** 🚀
-
-Your contributions help build a better procurement analytics platform for everyone.
