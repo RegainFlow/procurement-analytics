@@ -514,7 +514,7 @@ const App = () => {
             <div className="w-8 h-8 rounded bg-[var(--color-primary)] flex items-center justify-center text-black font-bold text-xl shadow-[0_0_15px_var(--color-primary)]">
               R
             </div>
-            <h1 className="text-2xl font-bold font-logo tracking-tighter text-white">Regain<span className="text-[var(--color-primary)]">Flow</span></h1>
+            <h1 className="text-2xl font-bold font-logo tracking-tighter text-white">Procurement<span className="text-[var(--color-primary)]"> Analytics</span></h1>
           </div>
 
           <nav className="space-y-2">
@@ -563,7 +563,7 @@ const App = () => {
             <button onClick={() => setShowMobileMenu(!showMobileMenu)} className="text-[var(--color-text-secondary)]">
               <Menu size={24} />
             </button>
-            <span className="font-bold font-logo">RegainFlow</span>
+            <span className="font-bold font-logo">Procurement Analytics</span>
           </div>
 
           <div className="hidden lg:flex items-center text-[var(--color-text-secondary)] text-sm">
@@ -598,7 +598,7 @@ const App = () => {
         <div className="fixed inset-0 z-50 lg:hidden bg-black/80 backdrop-blur-sm" onClick={() => setShowMobileMenu(false)}>
           <div className="w-64 h-full bg-[var(--color-bg-secondary)] p-6 border-r border-[var(--glass-border)]" onClick={e => e.stopPropagation()}>
             <div className="mb-8">
-              <h2 className="font-logo font-bold text-xl text-white">RegainFlow</h2>
+              <h2 className="font-logo font-bold text-xl text-white">Procurement Analytics</h2>
             </div>
             <nav className="space-y-2">
               <NavItem icon={LayoutDashboard} label="Dashboard" active={view === ViewState.DASHBOARD} onClick={() => { setView(ViewState.DASHBOARD); setShowMobileMenu(false); }} />
